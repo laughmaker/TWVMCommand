@@ -17,7 +17,7 @@
 {
     self = [super init];
     if (self) {
-        self.vmCommand = [[TWVMCommand alloc] initWithExecutionHandler:^(id input, TWCommandCompletionBlock completionHandler) {
+        self.vmCommand = [[TWVMCommand alloc] initWithExecutionHandler:^(id input, TWVMCommandCompletionBlock completionHandler) {
             [TWURLRequest post:url params:input completionHandler:^(NSDictionary *data, NSError *error) {
                 NSArray *topics = [TWTopic objectArrayWithKeyValuesArray:data[@"data"]];
                 if (completionHandler) {

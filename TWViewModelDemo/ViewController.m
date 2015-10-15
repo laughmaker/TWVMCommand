@@ -18,7 +18,8 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 
     [self.KVOController observe:self.topicVM keyPath:@"vmCommand.result" options:NSKeyValueObservingOptionInitial| NSKeyValueObservingOptionNew block:^(id observer, id object, NSDictionary *change) {
@@ -38,7 +39,8 @@
     return _topicVM;
 }
 
-- (IBAction)getData:(id)sender {
+- (IBAction)getData:(id)sender
+{
     NSDictionary *params = @{@"pageIndex": @(1), @"pageSize": @(2)};
     [self.topicVM exeute:params];
 }

@@ -9,23 +9,23 @@
 #import "TWVMCommand.h"
 
 @interface TWVMCommand ()
-@property (nonatomic, copy) TWCommandCompletionBlock commandCompletionBlock;
-@property (nonatomic, copy) TWCommandExecutionBlock commandExecutionBlock;
-@property (nonatomic, copy) TWCommandCancelBlock commandCancelBlock;
+@property (nonatomic, copy) TWVMCommandExecutionBlock commandExecutionBlock;
+@property (nonatomic, copy) TWVMCommandCancelBlock commandCancelBlock;
+
 @property (nonatomic, strong) TWVMCommandResult *result;
-@property (nonatomic, assign) TWCommandState state;
+@property (nonatomic, assign) TWVMCommandState state;
 
 @end
 
 @implementation TWVMCommand
 
-- (instancetype)initWithExecutionHandler:(TWCommandExecutionBlock)executionHandler
+- (instancetype)initWithExecutionHandler:(TWVMCommandExecutionBlock)executionHandler
 {
     self = [self initWithExecutionHandler:executionHandler cancelHandler:nil];
     return self;
 }
 
-- (instancetype)initWithExecutionHandler:(TWCommandExecutionBlock)executionHandler cancelHandler:(TWCommandCancelBlock)cancelHandler
+- (instancetype)initWithExecutionHandler:(TWVMCommandExecutionBlock)executionHandler cancelHandler:(TWVMCommandCancelBlock)cancelHandler
 {
     if (self = [super init]) {
         self.commandExecutionBlock = executionHandler;
@@ -37,28 +37,26 @@
 
 - (void)execute:(id)input
 {
-    self.state = TWCommandStateExecuting;
+    self.state = TWVMCommandStateExecuting;
     
-    if (!self.commandCompletionBlock) {
-        __weak typeof(self) weakSelf = self;
-        self.commandCompletionBlock = ^(id data,NSError *error) {
-            __strong typeof(self) strongSelf = weakSelf;
-            if (error) {
-                strongSelf.state = TWCommandStateFailed;
-            }
-            else {
-                strongSelf.state = TWCommandStateSucceed;
-            }
-            strongSelf.result = [[TWVMCommandResult alloc] initWithData:data error:error];
-        };
-    }
+    __weak typeof(self) weakSelf = self;
+    TWVMCommandCompletionBlock completion = ^(id data, NSError *error) {
+        __strong typeof(self) strongSelf = weakSelf;
+        if (error) {
+            strongSelf.state = TWVMCommandStateFailed;
+        }
+        else {
+            strongSelf.state = TWVMCommandStateSucceed;
+        }
+        strongSelf.result = [[TWVMCommandResult alloc] initWithData:data error:error];
+    };
     
-    self.commandExecutionBlock(input, self.commandCompletionBlock);
+    self.commandExecutionBlock(input, completion);
 }
 
 - (void)cancel
 {
-    self.state = TWCommandStateCancel;
+    self.state = TWVMCommandStateCancel;
     
     if (self.commandCancelBlock) {
         self.commandCancelBlock();
