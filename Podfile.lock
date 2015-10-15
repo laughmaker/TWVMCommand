@@ -1,0 +1,16 @@
+PODS:
+  - KVOController (1.0.3)
+  - MJExtension (2.5.12)
+  - TWNetwork (1.0.3)
+
+DEPENDENCIES:
+  - KVOController
+  - MJExtension
+  - TWNetwork
+
+SPEC CHECKSUMS:
+  KVOController: 9fd8f0343670994e4b6f9f0b31f5a45663f3e1cf
+  MJExtension: 5ab633484e431f777387c70b676c80f993361f1b
+  TWNetwork: e60e8aa350c2d42bab3c08880df7501a2ad4a5e0
+
+COCOAPODS: 0.38.2

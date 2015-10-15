@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		284A6E941BCF439D00A50059 /* TWTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 284A6E931BCF439D00A50059 /* TWTopic.m */; settings = {ASSET_TAGS = (); }; };
+		284A6E9A1BCF47C000A50059 /* TWVMCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 284A6E971BCF47C000A50059 /* TWVMCommand.m */; settings = {ASSET_TAGS = (); }; };
+		284A6E9B1BCF47C000A50059 /* TWVMCommandResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 284A6E991BCF47C000A50059 /* TWVMCommandResult.m */; settings = {ASSET_TAGS = (); }; };
 		28E478B61BCE042B00857959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E478B51BCE042B00857959 /* main.m */; };
 		28E478B91BCE042B00857959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E478B81BCE042B00857959 /* AppDelegate.m */; };
 		28E478BC1BCE042B00857959 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E478BB1BCE042B00857959 /* ViewController.m */; };
@@ -15,6 +18,8 @@
 		28E478C41BCE042B00857959 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E478C21BCE042B00857959 /* LaunchScreen.storyboard */; };
 		28E478CF1BCE042B00857959 /* TWViewModelDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E478CE1BCE042B00857959 /* TWViewModelDemoTests.m */; };
 		28E478DA1BCE042B00857959 /* TWViewModelDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E478D91BCE042B00857959 /* TWViewModelDemoUITests.m */; };
+		28E478F01BCE4E6F00857959 /* TWTopicVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E478EF1BCE4E6F00857959 /* TWTopicVM.m */; settings = {ASSET_TAGS = (); }; };
+		8474B26DD91648B8445499E9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41A1085BFBBBAECBECD904AE /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		284A6E921BCF439D00A50059 /* TWTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTopic.h; sourceTree = "<group>"; };
+		284A6E931BCF439D00A50059 /* TWTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTopic.m; sourceTree = "<group>"; };
+		284A6E961BCF47C000A50059 /* TWVMCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWVMCommand.h; sourceTree = "<group>"; };
+		284A6E971BCF47C000A50059 /* TWVMCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWVMCommand.m; sourceTree = "<group>"; };
+		284A6E981BCF47C000A50059 /* TWVMCommandResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWVMCommandResult.h; sourceTree = "<group>"; };
+		284A6E991BCF47C000A50059 /* TWVMCommandResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWVMCommandResult.m; sourceTree = "<group>"; };
 		28E478B11BCE042B00857959 /* TWViewModelDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWViewModelDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E478B51BCE042B00857959 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28E478B71BCE042B00857959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +62,11 @@
 		28E478D51BCE042B00857959 /* TWViewModelDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWViewModelDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E478D91BCE042B00857959 /* TWViewModelDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWViewModelDemoUITests.m; sourceTree = "<group>"; };
 		28E478DB1BCE042B00857959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28E478EE1BCE4E6F00857959 /* TWTopicVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTopicVM.h; sourceTree = "<group>"; };
+		28E478EF1BCE4E6F00857959 /* TWTopicVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTopicVM.m; sourceTree = "<group>"; };
+		41A1085BFBBBAECBECD904AE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A4436132BD5A2890C0DD89F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9B08E55561211A586DFE8F2E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8474B26DD91648B8445499E9 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +95,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		284A6E951BCF47C000A50059 /* TWVMCommand */ = {
+			isa = PBXGroup;
+			children = (
+				284A6E961BCF47C000A50059 /* TWVMCommand.h */,
+				284A6E971BCF47C000A50059 /* TWVMCommand.m */,
+				284A6E981BCF47C000A50059 /* TWVMCommandResult.h */,
+				284A6E991BCF47C000A50059 /* TWVMCommandResult.m */,
+			);
+			path = TWVMCommand;
+			sourceTree = "<group>";
+		};
+		284A6E9C1BCF4A3F00A50059 /* Topic */ = {
+			isa = PBXGroup;
+			children = (
+				284A6E9D1BCF4A5300A50059 /* Model */,
+			);
+			name = Topic;
+			sourceTree = "<group>";
+		};
+		284A6E9D1BCF4A5300A50059 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28E478EE1BCE4E6F00857959 /* TWTopicVM.h */,
+				28E478EF1BCE4E6F00857959 /* TWTopicVM.m */,
+				284A6E921BCF439D00A50059 /* TWTopic.h */,
+				284A6E931BCF439D00A50059 /* TWTopic.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		28E478A81BCE042B00857959 = {
 			isa = PBXGroup;
 			children = (
+				284A6E951BCF47C000A50059 /* TWVMCommand */,
 				28E478B31BCE042B00857959 /* TWViewModelDemo */,
 				28E478CD1BCE042B00857959 /* TWViewModelDemoTests */,
 				28E478D81BCE042B00857959 /* TWViewModelDemoUITests */,
 				28E478B21BCE042B00857959 /* Products */,
+				C212AFC1A036CBAB6EB43E42 /* Pods */,
+				BB5657DB5DD0FBC497A22276 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +151,7 @@
 		28E478B31BCE042B00857959 /* TWViewModelDemo */ = {
 			isa = PBXGroup;
 			children = (
+				284A6E9C1BCF4A3F00A50059 /* Topic */,
 				28E478B71BCE042B00857959 /* AppDelegate.h */,
 				28E478B81BCE042B00857959 /* AppDelegate.m */,
 				28E478BA1BCE042B00857959 /* ViewController.h */,
@@ -140,6 +191,23 @@
 			path = TWViewModelDemoUITests;
 			sourceTree = "<group>";
 		};
+		BB5657DB5DD0FBC497A22276 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41A1085BFBBBAECBECD904AE /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C212AFC1A036CBAB6EB43E42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B08E55561211A586DFE8F2E /* Pods.debug.xcconfig */,
+				7A4436132BD5A2890C0DD89F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28E478DE1BCE042C00857959 /* Build configuration list for PBXNativeTarget "TWViewModelDemo" */;
 			buildPhases = (
+				277C7CE609F4238A75A7E5B1 /* Check Pods Manifest.lock */,
 				28E478AD1BCE042B00857959 /* Sources */,
 				28E478AE1BCE042B00857959 /* Frameworks */,
 				28E478AF1BCE042B00857959 /* Resources */,
+				6E8CBD78A0923CF2B5024272 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,14 +335,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		277C7CE609F4238A75A7E5B1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E8CBD78A0923CF2B5024272 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		28E478AD1BCE042B00857959 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284A6E941BCF439D00A50059 /* TWTopic.m in Sources */,
 				28E478BC1BCE042B00857959 /* ViewController.m in Sources */,
 				28E478B91BCE042B00857959 /* AppDelegate.m in Sources */,
+				284A6E9B1BCF47C000A50059 /* TWVMCommandResult.m in Sources */,
+				284A6E9A1BCF47C000A50059 /* TWVMCommand.m in Sources */,
 				28E478B61BCE042B00857959 /* main.m in Sources */,
+				28E478F01BCE4E6F00857959 /* TWTopicVM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +516,7 @@
 		};
 		28E478DF1BCE042C00857959 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B08E55561211A586DFE8F2E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TWViewModelDemo/Info.plist;
@@ -420,6 +528,7 @@
 		};
 		28E478E01BCE042C00857959 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4436132BD5A2890C0DD89F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TWViewModelDemo/Info.plist;
@@ -496,6 +605,7 @@
 				28E478E01BCE042C00857959 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28E478E11BCE042C00857959 /* Build configuration list for PBXNativeTarget "TWViewModelDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +614,7 @@
 				28E478E31BCE042C00857959 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28E478E41BCE042C00857959 /* Build configuration list for PBXNativeTarget "TWViewModelDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +623,7 @@
 				28E478E61BCE042C00857959 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

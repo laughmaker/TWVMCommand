@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "TWTopicVM.h"
+#import "FBKVOController.h"
 
 @interface ViewController ()
+@property (nonatomic, strong) TWTopicVM *topicVM;
+- (IBAction)getData:(id)sender;
 
 @end
 
@@ -16,12 +20,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    [self.KVOController observe:self.topicVM keyPath:@"vmCommand.result" options:NSKeyValueObservingOptionInitial| NSKeyValueObservingOptionNew block:^(id observer, id object, NSDictionary *change) {
+        TWVMCommandResult *newValue = change[NSKeyValueChangeNewKey];
+        if (![newValue isEqual:[NSNull null]]) {
+            NSLog(@"newValue:%@", [newValue.data[0] keyValues]);
+        }
+    }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (TWTopicVM *)topicVM
+{
+    if (!_topicVM) {
+        _topicVM = [[TWTopicVM alloc] init];
+    }
+    return _topicVM;
+}
+
+- (IBAction)getData:(id)sender {
+    NSDictionary *params = @{@"pageIndex": @(1), @"pageSize": @(2)};
+    [self.topicVM exeute:params];
 }
 
 @end
